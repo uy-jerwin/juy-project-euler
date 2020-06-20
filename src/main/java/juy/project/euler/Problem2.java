@@ -22,8 +22,8 @@ public class Problem2 {
 
 		int sum = 0;
 		int current = 0;
-		int t1 = 1;
-		int t2 = 2;
+		int t1 = 0;
+		int t2 = 1;
 		while (current < limit) {
 			current = t1 + t2;
 			if (current % 2 == 0) {
@@ -32,7 +32,7 @@ public class Problem2 {
 			t1 = t2;
 			t2 = current;
 		}
-		System.out.println(sum + 2);
+		System.out.println(sum);
 	}
 
 }
