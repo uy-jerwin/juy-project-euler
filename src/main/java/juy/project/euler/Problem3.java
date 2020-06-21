@@ -12,10 +12,21 @@ package juy.project.euler;
  */
 public class Problem3 {
 
-	public static void main(String[] args) {
-		long input = 600851475143L;
-
+	public long getLargestPrimeFactor(long input) {
+		long result = 1L;
+		while (result != (result = getLargestPrimeFactorInternal(input))) {
+			input = result;
+		}
+		return result;
 	}
 
-	
+	private long getLargestPrimeFactorInternal(long input) {
+		for (long i = 2; i < input - 1; i++) {
+			if (input % i == 0) {
+				return input / i;
+			}
+		}
+		return input;
+	}
+
 }

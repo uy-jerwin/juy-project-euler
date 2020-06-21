@@ -12,18 +12,15 @@ package juy.project.euler;
  *
  */
 public class Problem1 {
-
-	public static void main(String[] args) {
-		int limit = 1000;
+	
+	public int solution(int limit) {
 		int sum = 0;
-		for (int i = 0; i < limit; i++)
-		{
-			if (i % 3 == 0 || i % 5 == 0)
-			{
+		for (int i = 0; i < limit; i++) {
+			if (i % 3 == 0 || i % 5 == 0) {
 				sum = sum + i;
 			}
 		}
-		System.out.println(sum);
+		return sum;
 	}
-	
+
 }

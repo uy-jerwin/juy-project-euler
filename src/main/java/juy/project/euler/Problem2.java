@@ -16,10 +16,8 @@ package juy.project.euler;
  *
  */
 public class Problem2 {
-
-	public static void main(String[] args) {
-		int limit = 4000000;
-
+	
+	public int solution(int limit) {
 		int sum = 0;
 		int current = 0;
 		int t1 = 0;
@@ -32,7 +30,7 @@ public class Problem2 {
 			t1 = t2;
 			t2 = current;
 		}
-		System.out.println(sum);
+		return sum;
 	}
 
 }
