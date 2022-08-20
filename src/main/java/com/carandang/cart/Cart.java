@@ -94,7 +94,7 @@ public class Cart {
     private static int getCartItemIndexForRemove(Scanner input) {
         try {
             int index = Integer.parseInt(input.next());
-            for (int i = 0; i < cartItems.length; i++) {
+            for (int i = 0; i < selectedCartItems.size(); i++) {
                 if (i == index) {
                     return i;
                 }
